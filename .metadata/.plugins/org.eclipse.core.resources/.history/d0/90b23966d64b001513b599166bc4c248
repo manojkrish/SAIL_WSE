@@ -1,0 +1,14 @@
+package com.obj.TestScript;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import com.obj.Browser.BrowserInit;
+import com.obj.Dashboard_Widget.Dashboard_Widget;
+
+public class Dashboard_Teaser_Test extends BrowserInit{
+	
+	public WebDriver driver;
+
+	
+}

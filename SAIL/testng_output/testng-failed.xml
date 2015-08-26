@@ -4,16 +4,15 @@
   <listeners>
     <listener class-name="com.ExtentReport.ExtentReporterNG"/>
   </listeners>
-  <test name="Test(failed)" parallel="none">
+  <test name="Dashboard_Teaser(failed)" parallel="none">
     <classes>
-      <class name="com.obj.TestScript.Status_Feed_Test">
+      <class name="com.obj.TestScript.DashBoard_Teaser">
         <methods>
-          <include name="FileUpload_Test"/>
-          <include name="Status_Feed_TestCase"/>
+          <include name="Dashboard_Widget_TestCase"/>
           <include name="OpenBrowser"/>
           <include name="CloseBrowser"/>
         </methods>
-      </class> <!-- com.obj.TestScript.Status_Feed_Test -->
+      </class> <!-- com.obj.TestScript.DashBoard_Teaser -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Dashboard_Teaser(failed) -->
 </suite> <!-- Failed suite [Suite] -->

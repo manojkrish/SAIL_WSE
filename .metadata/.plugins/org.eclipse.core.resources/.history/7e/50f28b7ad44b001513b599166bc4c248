@@ -1,0 +1,5 @@
+package com.obj.Practice_Activity;
+
+public interface Practice_Activity_interface {
+
+}

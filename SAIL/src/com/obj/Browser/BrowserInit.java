@@ -1,22 +1,23 @@
 package com.obj.Browser;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
-//import org.openqa.selenium.firefox.FirefoxDriver;
-//import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
+import org.testng.annotations.BeforeTest;
 import com.obj.LoginPage.LoginPage;
 
+@SuppressWarnings("unused")
 public class BrowserInit {
 	
 	public WebDriver driver;
 	
-	@BeforeClass
+	@BeforeTest
 	public void OpenBrowser()
 	{
 		
@@ -66,7 +67,7 @@ public class BrowserInit {
 		
 	}
 	
-	@AfterClass
+	@AfterTest
 	public void CloseBrowser()
 	{
 		try{
