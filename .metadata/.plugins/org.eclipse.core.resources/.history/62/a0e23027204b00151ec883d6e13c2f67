@@ -1,0 +1,14 @@
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+
+public class Testing {
+	
+	
+	@Test
+	public void test(){
+		WzebDriver driver=new FirefoxDriver();
+		
+	}
+
+}

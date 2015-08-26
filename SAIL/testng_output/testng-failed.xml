@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="com.ExtentReport.ExtentReporterNG"/>
+  </listeners>
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="com.obj.TestScript.Status_Feed_Test">
+        <methods>
+          <include name="FileUpload_Test"/>
+          <include name="Status_Feed_TestCase"/>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.obj.TestScript.Status_Feed_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
