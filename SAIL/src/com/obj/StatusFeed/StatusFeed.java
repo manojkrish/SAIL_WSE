@@ -72,9 +72,9 @@ public class StatusFeed implements Sail_Interface_Status_feed {
 	public boolean Is_Status_Feed_Enabled() 
 	{
 		
-		WebElement We =driver.findElement(Status_Feed_Avail); 
-		
 		WebDriverWait wait = new WebDriverWait(driver,10);
+		
+		WebElement We =driver.findElement(Status_Feed_Avail); 
 		
 		wait.until(ExpectedConditions.elementToBeClickable(We));
 		

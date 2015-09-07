@@ -1,0 +1,5 @@
+package com.obj.Appium.Configuration;
+
+public class Appium {
+
+}

@@ -5,9 +5,11 @@
     <classes>
       <class name="com.obj.TestScript.Status_Feed_Test">
         <methods>
+          <include name="LInksUpload_Test"/>
+          <include name="FileUpload_Test"/>
+          <include name="Dashboard_Widget_TestCase"/>
           <include name="Status_Feed_TestCase"/>
-          <include name="OpenBrowser"/>
-          <include name="CloseBrowser"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.obj.TestScript.Status_Feed_Test -->
     </classes>

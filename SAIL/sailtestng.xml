@@ -8,11 +8,6 @@
 		<classes>
 			<class name="com.obj.TestScript.Status_Feed_Test" />
 		</classes>
-		
-		<classes>
-			<class name="com.obj.TestScript.DashBoard_Teaser" />
-		</classes>
-	
 	</test> <!-- Test -->
 	
 	

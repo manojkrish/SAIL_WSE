@@ -1,0 +1,78 @@
+package com.obj.Bubble_Login;
+
+public class Bubble_Login implements Bubble_Login_Inter {
+
+	@Override
+	public boolean Is_Bubble_Login_Page_Enabled() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean Is_Bubble_Login_Page_Displayed() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public String Get_Bubble_Login() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean Is_User_Name_Field_Enabled() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean Is_User_Name_Field_Displayed() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void Insert_User_Name() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean Is_Password_Field_Enabled() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean Is_Password_Field_Displayed() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void Insert_Password() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean Is_Login_Button_Enabled() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean Is_Login_Button_Displayed() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void Click_Login_Button() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

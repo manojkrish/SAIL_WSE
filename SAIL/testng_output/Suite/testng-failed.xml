@@ -6,13 +6,16 @@
   </listeners>
   <test name="Dashboard_Teaser(failed)" parallel="none">
     <classes>
-      <class name="com.obj.TestScript.DashBoard_Teaser">
+      <class name="com.obj.TestScript.Status_Feed_Test">
         <methods>
+          <include name="LInksUpload_Test"/>
+          <include name="FileUpload_Test"/>
           <include name="Dashboard_Widget_TestCase"/>
+          <include name="Status_Feed_TestCase"/>
           <include name="OpenBrowser"/>
           <include name="CloseBrowser"/>
         </methods>
-      </class> <!-- com.obj.TestScript.DashBoard_Teaser -->
+      </class> <!-- com.obj.TestScript.Status_Feed_Test -->
     </classes>
   </test> <!-- Dashboard_Teaser(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,13 +1,18 @@
 package com.obj.TestScript;
 import org.testng.annotations.Test;
 import org.testng.Assert;
+
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.openqa.selenium.NoSuchElementException;
+
+import com.obj.Appium.Configuration.Appium;
 import com.obj.Browser.BrowserInit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,6 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import com.obj.Browser.BrowserInit;
 import com.obj.Browser.Browser_Init_Grid;
 import com.obj.Browser.OpenBrowser;
@@ -30,20 +36,181 @@ import com.obj.Profile_Activity.Profile_Activity;
 import com.obj.StatusFeed.StatusFeed;
 
 @SuppressWarnings("unused")
-public class Status_Feed_Test extends  /*Browser_Init_Grid */BrowserInit
+public class Status_Feed_Test extends Appium  /*Browser_Init_Grid *//*BrowserInit*/
 {
-	
+	@Test(priority=1)
+	public void Dashboard_Widget_TestCase() throws InterruptedException
+	{
+		
+		//Teaser Feed Status with public...
+		
+		Dashboard_Widget dw = new Dashboard_Widget(driver);
+		
+		Thread.sleep(3000);
+		
+		dw.Scrolling_The_Page();
+		
+		dw.Is_Status_Feed_Enabled();
+		
+		dw.Is_Profile_Image_Enabled();
+		
+		dw.Is_Profile_Image_Displayed();
+		
+		dw.Is_Status_feed_Text_Field_Enabled();
+		
+		dw.Is_Status_feed_Text_Field_Displayed();
+		
+		dw.Insert_Empty_Feed();
+		
+		dw.Click_Post_Button();
+		
+		dw.IsEmpty_Status_Alert_Enabled();
+		
+		dw.IsEmpty_Status_Alert_Displayed();
+		
+		dw.close_Empty_Alert();
+		
+		Thread.sleep(3000);
+		
+		dw.Scrolling_The_Page();
+		
+		dw.Insert_Text_In_The_Feed();
+		
+		dw.Is_Privacy_Drop_Down_Enabled();
+		
+		dw.Is_Privacy_Drop_Down_Displayed();
+		
+		dw.SelectPrivacyOption();
+		
+		dw.Is_EveryOne_Option_Enabled();
+		
+		dw.Is_EveryOne_Option_Displayed();
+		
+		dw.SelectEveryone();
+		
+		dw.Click_Post_Button();
+		
+		Thread.sleep(3000);
+		
+		//MyFriend Option
+
+		dw.Scrolling_The_Page();
+		
+		dw.Insert_Text_In_The_Feed();
+		
+		dw.Is_Privacy_Drop_Down_Enabled();
+		
+		dw.Is_Privacy_Drop_Down_Displayed();
+		
+		dw.SelectPrivacyOption();
+		
+		dw.Is_MyFriend_Option_Enabled();
+		
+		dw.Is_MyFriend_Option_Displayed();
+		
+		dw.SelectMyFriend();
+		
+		dw.Click_Post_Button();
+		
+		dw.Is_Logged_In_UserName_Enabled();
+		
+		dw.Is_Logged_In_UserName_Displayed();
+		
+		dw.Is_Feed_In_UserName_Enabled();
+		
+		dw.Is_Feed_In_UserName_Displayed();
+		
+		if(dw.Get_Feed_UserName() != "You")
+		{
+			System.out.println("The Feed post is posted by the UserName :" +dw.Get_Logged_UserName());
+		}
+		
+		dw.Is_Teaser_Feed_Enabled();
+		
+		dw.Is_Teaser_Feed_Displayed();
+		
+		System.out.println("The content is the status feed  :" +dw.Get_Teaser_Feed());
+		
+		Thread.sleep(3000);
+		
+		//FileUpload
+		
+		dw.Is_File_Tab_Enabled();
+
+		dw.Is_File_Tab_Displayed();
+
+		dw.click_File_tab();
+				
+		dw.Multiple_File_Upload_Area_With_File();
+		
+		if(dw.Get_Feed_UserName() != "You")
+		{
+			System.out.println("The Feed post is posted by the UserName :" +dw.Get_Logged_UserName());
+		}
+		
+		dw.Is_Teaser_Feed_Enabled();
+		
+		dw.Is_Teaser_Feed_Displayed();
+		
+		System.out.println("The content is the status feed  :" +dw.Get_Teaser_Feed());
+		
+		Thread.sleep(3000);
+		
+		dw.Is_Link_Tab_Enabled();
+		
+		dw.Is_Link_Tab_Displayed();
+		
+		dw.Click_Link_Tab();
+		
+		dw.Is_Link_Text_Field_Enabled();
+		
+		dw.Is_Link_Text_Field_Displayed();
+		
+		dw.Click_Link_Text_Field();
+		
+		if(dw.Get_Feed_UserName() != "You")
+		{
+			System.out.println("The Feed post is posted by the UserName :" +dw.Get_Logged_UserName());
+		}
+		
+		dw.Is_Teaser_Feed_Enabled();
+		
+		dw.Is_Teaser_Feed_Displayed();
+		
+		System.out.println("The content is the status feed  :" +dw.Get_Teaser_Feed());
+		
+		dw.Is_Teaser_Feed_Enabled();
+		
+		dw.Is_Teaser_Feed_Displayed();
+		
+		dw.Click_Feed_Page_Navigation();
+		
+		System.out.println("The page title is :" +driver.getTitle());
+							
+	}
 	
 	@Test(priority=2)
 	public void Status_Feed_TestCase() throws InterruptedException {
 
 		StatusFeed sf = new StatusFeed(driver);
 		
+		Dashboard_Widget dw = new Dashboard_Widget(driver);
+		
 		//Dashboard_Widget dw = new Dashboard_Widget(driver);
 		
 		Edit_Status es = new Edit_Status(driver);
 		
+		//dw.Scrolling_The_Page();
+		
 		sf.Scrolling_The_Page();
+		
+		dw.Is_Teaser_Feed_Enabled();
+		
+		dw.Is_Teaser_Feed_Displayed();
+		
+		dw.Click_Feed_Page_Navigation();
+		
+		System.out.println("The page title is :" +driver.getTitle());
 
 		Assert.assertEquals(sf.Is_Status_Feed_Enabled(), true);
 
@@ -100,7 +267,7 @@ public class Status_Feed_Test extends  /*Browser_Init_Grid */BrowserInit
 		
 		try{
 
-		String st4 = st2.substring(9, 37);
+		st2=st2.replaceAll("Welcome,.", "");
 
 		Assert.assertEquals(sf.Is_Feed_In_UserName_Enabled(), true);
 
@@ -108,7 +275,7 @@ public class Status_Feed_Test extends  /*Browser_Init_Grid */BrowserInit
 
 		String st3 = sf.Get_Feed_UserName();
 
-		Assert.assertEquals(st4, st3);
+		Assert.assertEquals(st2, st3);
 		
 		}
 		catch(Exception e)
@@ -478,11 +645,17 @@ public class Status_Feed_Test extends  /*Browser_Init_Grid */BrowserInit
 		
 		Comment_In_The_Post cp = new Comment_In_The_Post(driver);
 		
-		//Dashboard_Widget dw = new Dashboard_Widget(driver);
+		Dashboard_Widget dw = new Dashboard_Widget(driver);
 		
 		//fu.ScrollOption();
 		
 		Thread.sleep(3000);
+		
+		dw.Is_Teaser_Feed_Enabled();
+		
+		dw.Is_Teaser_Feed_Displayed();
+		
+		dw.Click_Feed_Page_Navigation();
 		
 		// Multiple file upload //
 		
@@ -982,14 +1155,22 @@ public class Status_Feed_Test extends  /*Browser_Init_Grid */BrowserInit
 		
 }
 
-	//@Test(priority=4)
+	@Test(priority=4)
 	public void LInksUpload_Test() throws InterruptedException
 	{
 		Links l = new Links(driver);
 		
 		Edit_Status es = new Edit_Status(driver);
 		
-		//Dashboard_Widget dw = new Dashboard_Widget(driver);
+		Dashboard_Widget dw = new Dashboard_Widget(driver);
+		
+		dw.Is_Teaser_Feed_Enabled();
+		
+		dw.Is_Teaser_Feed_Displayed();
+		
+		dw.Click_Feed_Page_Navigation();
+		
+		System.out.println("The page title is :" +driver.getTitle());
 		
 		Thread.sleep(3000);
 		

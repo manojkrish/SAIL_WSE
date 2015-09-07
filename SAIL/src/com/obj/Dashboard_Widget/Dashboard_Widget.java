@@ -58,9 +58,8 @@ public class Dashboard_Widget implements Dashboard_Widget_Interface {
 	
 	By Teaser_Feed = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div");
 
-	By Feed_Page_Navigation = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[2]/div/button");
+	By Feed_Page_Navigation = By.className("post-min-blocks");
 	// FileUpload Tab
-	
 	
 	By FileTab = By.xpath(".//*[@id='tabclick_1']/a/tab-heading"); 
 	
@@ -1371,7 +1370,7 @@ public class Dashboard_Widget implements Dashboard_Widget_Interface {
 	
 	public void Click_Feed_Page_Navigation() {
 		
-		WebDriverWait Wait = new WebDriverWait(driver,10);
+		WebDriverWait Wait = new WebDriverWait(driver,20);
 		
 		WebElement We = driver.findElement(Feed_Page_Navigation);
 		
