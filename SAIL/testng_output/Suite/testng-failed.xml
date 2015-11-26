@@ -4,18 +4,50 @@
   <listeners>
     <listener class-name="com.ExtentReport.ExtentReporterNG"/>
   </listeners>
-  <test name="Dashboard_Teaser(failed)" parallel="none">
+  <test name="File_Upload_Test(failed)" parallel="none">
     <classes>
-      <class name="com.obj.TestScript.Status_Feed_Test">
+      <class name="com.obj.TestScript.Dashboard_Status_Feed_TestScript">
         <methods>
-          <include name="LInksUpload_Test"/>
-          <include name="FileUpload_Test"/>
-          <include name="Dashboard_Widget_TestCase"/>
-          <include name="Status_Feed_TestCase"/>
           <include name="OpenBrowser"/>
           <include name="CloseBrowser"/>
         </methods>
-      </class> <!-- com.obj.TestScript.Status_Feed_Test -->
+      </class> <!-- com.obj.TestScript.Dashboard_Status_Feed_TestScript -->
+      <class name="com.obj.Discussion.Discussion_Test_Case">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.obj.Discussion.Discussion_Test_Case -->
+      <class name="com.obj.FileUpload.File_Upload_Test_Case">
+        <methods>
+          <include name="FileUpload_Test"/>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.obj.FileUpload.File_Upload_Test_Case -->
     </classes>
-  </test> <!-- Dashboard_Teaser(failed) -->
+  </test> <!-- File_Upload_Test(failed) -->
+  <test name="Discussion_Feature_Test(failed)" parallel="none">
+    <classes>
+      <class name="com.obj.TestScript.Dashboard_Status_Feed_TestScript">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.obj.TestScript.Dashboard_Status_Feed_TestScript -->
+      <class name="com.obj.Discussion.Discussion_Test_Case">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+          <include name="Deleting_Discussion_Replies_Test"/>
+        </methods>
+      </class> <!-- com.obj.Discussion.Discussion_Test_Case -->
+      <class name="com.obj.FileUpload.File_Upload_Test_Case">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.obj.FileUpload.File_Upload_Test_Case -->
+    </classes>
+  </test> <!-- Discussion_Feature_Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

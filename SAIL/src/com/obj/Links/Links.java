@@ -14,15 +14,15 @@ public class Links implements Links_Interface{
 	
 	public WebDriver driver;
 	
-	By Link_Tab = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[1]/section/div/ul/li[4]/a");
+	By Link_Tab = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[1]/section/div/ul/li[4]/a");
 	
-	By Link_Text_Field = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[1]/section/div/div/div[4]/div/div/link-post/div[1]/div/div[1]");
+	By Link_Text_Field = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[1]/section/div/div/div[4]/div/div/link-post/div[1]/div/div[1]");
 	
-	By Meta_Description = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[1]/section/div/div/div[4]/div/div/link-post/div[2]/div");
+	By Meta_Description = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[1]/section/div/div/div[4]/div/div/link-post/div[2]/div");
 	
-	By Meta_Description_Close = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[1]/section/div/div/div[4]/div/div/link-post/div[2]/div/button");
+	By Meta_Description_Close = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[1]/section/div/div/div[4]/div/div/link-post/div[2]/div/button");
 	
-	By clickPost = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[2]/button");
+	By clickPost = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[2]/button");
 	
 	public Links(WebDriver driver)
 	{

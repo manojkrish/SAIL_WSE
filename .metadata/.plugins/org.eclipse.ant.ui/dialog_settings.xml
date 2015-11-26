@@ -3,6 +3,6 @@
 	<item value="false" key="AntPropertiesFileSelectionDialog.showAll"/>
 	<item value="/SAIL" key="AntPropertiesFileSelectionDialog.lastContainer"/>
 	<section name="org.eclipse.ant.internal.ui.views.AntView">
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;antView&gt;&#x0D;&#x0A;&lt;project default=&quot;Run&quot; error=&quot;false&quot; name=&quot;automation&quot; path=&quot;/SAIL/Build.xml&quot;/&gt;&#x0D;&#x0A;&lt;filterInternalTargets value=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;/antView&gt;" key="memento"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;antView&gt;&#x0D;&#x0A;&lt;project default=&quot;xslt&quot; error=&quot;false&quot; name=&quot;Sail_automation&quot; path=&quot;/SAIL/Build.xml&quot;/&gt;&#x0D;&#x0A;&lt;filterInternalTargets value=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;/antView&gt;" key="memento"/>
 	</section>
 </section>

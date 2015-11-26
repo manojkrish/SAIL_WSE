@@ -1,0 +1,15 @@
+package com.obj.Discussion;
+
+public interface Sail_Discussion_Interface {
+
+	public boolean Is_Connect_Displayed();
+	
+	public void Click_Connect();
+	
+	public boolean Is_Discussions_Displayed();
+	
+	public void Click_Discussions();
+	
+	
+	
+}

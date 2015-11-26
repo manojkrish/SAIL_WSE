@@ -1,0 +1,32 @@
+package com.obj.Discussion;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Discussion {
+	
+	public WebDriver driver;
+	
+	By Connect = By.xpath("html/body/div[2]/div[1]/nav[2]/div/div[3]/ul[1]/li[3]/a");
+	
+	By Discussion = By.linkText("Discussions");//By.xpath("html/body/div[2]/div[1]/nav[2]/div/div[3]/ul[1]/li[3]/ul/li[3]/a");
+
+	By Discussion_Input_Box = By.xpath(".//*[@id='discussion-search']/div/div[1]/input");
+	
+	By Discussion_Result_Count = By.xpath("html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div[1]/div/span");
+	
+	By Discussion_Result_title = By.xpath("html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div");
+	
+	By No_More_Result_Found = By.xpath("html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/span");
+	
+	By Click_Result = By.xpath("html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div[2]");
+	
+	
+	public Discussion(WebDriver driver)
+	{
+		
+		this.driver = driver;
+		
+	}
+	
+}

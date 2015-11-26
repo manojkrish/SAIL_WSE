@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Failed suite [Social_Suite]" parallel="none">
+  <listeners>
+    <listener class-name="com.ExtentReport.ExtentReporterNG"/>
+  </listeners>
+  <test name="Dashboard_Status_Feed_Feature_Test(failed)" parallel="none">
+    <classes>
+      <class name="com.obj.TestScript.Dashboard_Status_Feed_TestScript">
+        <methods>
+          <include name="Dashboard_Widget_TestCase"/>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.obj.TestScript.Dashboard_Status_Feed_TestScript -->
+      <class name="com.obj.Discussion.Discussion_Test_Case">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.obj.Discussion.Discussion_Test_Case -->
+      <class name="com.obj.FileUpload.File_Upload_Test_Case">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.obj.FileUpload.File_Upload_Test_Case -->
+    </classes>
+  </test> <!-- Dashboard_Status_Feed_Feature_Test(failed) -->
+  <test name="File_Upload_Test(failed)" parallel="none">
+    <classes>
+      <class name="com.obj.TestScript.Dashboard_Status_Feed_TestScript">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.obj.TestScript.Dashboard_Status_Feed_TestScript -->
+      <class name="com.obj.Discussion.Discussion_Test_Case">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.obj.Discussion.Discussion_Test_Case -->
+      <class name="com.obj.FileUpload.File_Upload_Test_Case">
+        <methods>
+          <include name="FileUpload_Test"/>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.obj.FileUpload.File_Upload_Test_Case -->
+    </classes>
+  </test> <!-- File_Upload_Test(failed) -->
+  <test name="Discussion_Feature_Test(failed)" parallel="none">
+    <classes>
+      <class name="com.obj.TestScript.Dashboard_Status_Feed_TestScript">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.obj.TestScript.Dashboard_Status_Feed_TestScript -->
+      <class name="com.obj.Discussion.Discussion_Test_Case">
+        <methods>
+          <include name="Discussion_Replies_Option_Test"/>
+          <include name="filtering_Unfiltering_Discussion_Test"/>
+          <include name="Discussion_Replies_test"/>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+          <include name="Deleting_Discussion_Replies_Test"/>
+          <include name="Editing_Discussion_Replies_Test"/>
+          <include name="Navigate_To_Discussion_Page_Test"/>
+        </methods>
+      </class> <!-- com.obj.Discussion.Discussion_Test_Case -->
+      <class name="com.obj.FileUpload.File_Upload_Test_Case">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.obj.FileUpload.File_Upload_Test_Case -->
+    </classes>
+  </test> <!-- Discussion_Feature_Test(failed) -->
+</suite> <!-- Failed suite [Social_Suite] -->

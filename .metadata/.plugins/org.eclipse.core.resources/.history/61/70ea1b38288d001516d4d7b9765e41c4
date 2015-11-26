@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Social_Suite" parallel="none" configfailurepolicy="continue">
+	<test name="Dashboard_Status_Feed_Feature_Test">
+		<listeners>
+		<listener class-name="com.ExtentReport.ExtentReporterNG" />
+		</listeners>
+		<classes>
+		<class name="com.obj.TestScript.Dashboard_Status_Feed_TestScript" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="File_Upload_Test">
+		<listeners>
+		<listener class-name="com.ExtentReport.ExtentReporterNG" />
+		</listeners>
+		<classes>
+		<class name="com.obj.FileUpload.File_Upload_Test_Case" />
+		</classes>
+	</test>	
+	<test name="Discussion_Feature_Test">
+		<listeners>
+		<listener class-name="com.ExtentReport.ExtentReporterNG" />
+		</listeners>
+		<classes>
+		<class name="com.obj.Discussion.Discussion_Test_Case" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

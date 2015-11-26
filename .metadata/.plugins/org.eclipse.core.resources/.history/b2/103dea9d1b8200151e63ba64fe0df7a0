@@ -1,0 +1,28 @@
+package com.obj.Discussion;
+
+public interface Sail_Discussion_Interface {
+
+	public boolean Is_Connect_Displayed();
+	
+	public void Click_Connect();
+	
+	public boolean Is_Discussions_Displayed();
+	
+	public void Click_Discussions();
+	
+	public boolean Is_All_Category_Displayed();
+	
+	public void Click_All_Category();
+	
+	public boolean Is_All_Result_displayed();
+	
+	public String Get_All_result_Count();
+	
+	public void Unclick_All_Category();
+	
+	
+	
+	
+	
+	
+}

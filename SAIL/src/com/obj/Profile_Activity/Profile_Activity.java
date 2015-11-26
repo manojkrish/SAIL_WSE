@@ -19,35 +19,35 @@ public class Profile_Activity implements Profile_Activity_Interface {
 	
 	By WSE = By.xpath("/html/body/div[2]/div[1]/nav[2]/div/div[3]/ul[1]/li[1]/a");
 	
-	By My_Profile = By.xpath("/html/body/div[2]/div[1]/nav[2]/div/div[3]/ul[1]/li[1]/ul/li[3]/a");
+	By My_Profile = By.xpath("/html/body/div[2]/div[1]/nav[2]/div/div[3]/ul[1]/li[1]/ul/li[2]/a");
 	
-	By Profile_User_Name = By.xpath("/html/body/div[2]/div[2]/div[4]/div/main/div/header/div/div/div/div/h2");
+	By Profile_User_Name = By.xpath("/html/body/div[2]/div[2]/div[3]/div/main/div/header/div/div/div/div/h2");
 	
-	By Activity_Tab = By.xpath("/html/body/div[2]/div[2]/div[4]/div/main/div/div[1]/div/div/ul/li[1]/a");
+	By Activity_Tab = By.xpath("/html/body/div[2]/div[2]/div[3]/div/main/div/div[1]/div/div/ul/li[1]/a");
 	
-	By Status_Feed_Avail = By.xpath("/html/body/div[2]/div[2]/div[4]/div/main/div/div[2]/div/div/div/div/share-widget/section/div[1]");
+	By Status_Feed_Avail = By.xpath("/html/body/div[2]/div[2]/div[3]/div/main/div/div[2]/div/div/div/share-widget/section/div[1]");
 	
-	By Status_Feed_Tab = By.xpath("/html/body/div[2]/div[2]/div[4]/div/main/div/div[2]/div/div/div/div/share-widget/section/div[1]/section/div/ul/li[1]/a");
+	By Status_Feed_Tab = By.xpath("/html/body/div[2]/div[2]/div[3]/div/main/div/div[2]/div/div/div/share-widget/section/div[1]/section/div/ul/li[1]/a");
 	
-	By Status_Field_Input = By.xpath("/html/body/div[2]/div[2]/div[4]/div/main/div/div[2]/div/div/div/div/share-widget/section/div[1]/section/div/div/div[1]/div/div/div/div/div[1]");
+	By Status_Field_Input = By.xpath("/html/body/div[2]/div[2]/div[3]/div/main/div/div[2]/div/div/div/share-widget/section/div[1]/section/div/div/div[1]/div/div/div/div/div[1]");
 	
-	By Privacy_Status_Feed = By.xpath("/html/body/div[2]/div[2]/div[4]/div/main/div/div[2]/div/div/div/div/share-widget/section/div[2]/div/button");
+	By Privacy_Status_Feed = By.xpath("/html/body/div[2]/div[2]/div[3]/div/main/div/div[2]/div/div/div/share-widget/section/div[2]/div/button");
 	
-	By EveryOne_Status = By.xpath("/html/body/div[2]/div[2]/div[4]/div/main/div/div[2]/div/div/div/div/share-widget/section/div[2]/div/ul/li[1]/a");
+	By EveryOne_Status = By.xpath("/html/body/div[2]/div[2]/div[3]/div/main/div/div[2]/div/div/div/share-widget/section/div[2]/div/ul/li[1]/a");
 	
-	By Friends_Status = By.xpath("/html/body/div[2]/div[2]/div[4]/div/main/div/div[2]/div/div/div/div/share-widget/section/div[2]/div/ul/li[2]/a");
+	By Friends_Status = By.xpath("/html/body/div[2]/div[2]/div[3]/div/main/div/div[2]/div/div/div/share-widget/section/div[2]/div/ul/li[2]/a");
 	
-	By Post_Button = By.xpath("/html/body/div[2]/div[2]/div[4]/div/main/div/div[2]/div/div/div/div/share-widget/section/div[2]/button");
+	By Post_Button = By.xpath("/html/body/div[2]/div[2]/div[3]/div/main/div/div[2]/div/div/div/share-widget/section/div[2]/button");
 	
-	By Post_Feed_Content_In_Activity = By.xpath("/html/body/div[2]/div[2]/div[4]/div/main/div/div[2]/div/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[1]/div");
+	By Post_Feed_Content_In_Activity = By.xpath("/html/body/div[2]/div[2]/div[3]/div/main/div/div[2]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[1]");
 	
-	By WSE_Logo_Navigate = By.xpath("/html/body/div[2]/div[1]/nav[2]/div/div[1]/a/div");
+	By WSE_Logo_Navigate = By.xpath("/html/body/div[2]/div[1]/nav[2]/div/div[1]/a");
 	
 	By Connect_Option = By.xpath("/html/body/div[2]/div[1]/nav[2]/div/div[3]/ul[1]/li[3]/a");
 	
-	By Feeds = By.xpath("/html/body/div[2]/div[1]/nav[2]/div/div[3]/ul[1]/li[3]/ul/li[3]/a");
+	By Feeds = By.xpath("/html/body/div[2]/div[1]/nav[2]/div/div[3]/ul[1]/li[3]/ul/li[2]/a");
 	
-	By Get_Post_From_The_Post_Feed = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[1]/div");
+	By Get_Post_From_The_Post_Feed = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[1]");
 	
 	By Feeds_Multiple = By.className("post-header");
 			

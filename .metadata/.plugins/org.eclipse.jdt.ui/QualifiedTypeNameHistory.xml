@@ -4,4 +4,7 @@
 <fullyQualifiedTypeName name="com.thoughtworks.selenium.webdriven.commands.FireEvent"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="javax.swing.text.Document"/>
+<fullyQualifiedTypeName name="org.jsoup.nodes.Element"/>
 </qualifiedTypeNameHistroy>

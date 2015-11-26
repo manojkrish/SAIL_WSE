@@ -1,0 +1,33 @@
+package com.obj.About;
+
+import org.testng.annotations.Test;
+
+import com.obj.Browser.BrowserInit;
+
+public class About_Test_Case extends BrowserInit {
+	
+	@Test
+	public void Navigate_To_About() throws InterruptedException{
+		
+		About a = new About(driver);
+		
+		a.Is_MyWse_Displayed();
+		
+		a.click_MyWse();
+		
+		a.My_Profile_Displayed();
+		
+		a.Click_My_Profile();
+		
+		a.Is_About_Displayed();
+		
+		a.Click_About();
+		
+		Thread.sleep(3000);
+		
+	}
+
+	
+	
+
+}

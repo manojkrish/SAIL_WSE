@@ -1,0 +1,5 @@
+package com.obj.About;
+
+public interface About_inter {
+
+}

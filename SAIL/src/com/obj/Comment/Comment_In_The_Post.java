@@ -13,29 +13,29 @@ public class Comment_In_The_Post implements Comment_Interface{
 	
 	public WebDriver driver;
 	
-	By Comment_Field = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[3]/div/div/div/div/form/div[1]/div/div[1]");
+	By Comment_Field = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[3]/div/div/div/div/form/div[1]/div/div[1]");
 	
-	By Comment_Button = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[3]/div/div/div/div/form/div[2]/button[1]");
+	By Comment_Button = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[3]/div/div/div/div/form/div[2]/button[1]");
 
-	By Comment_Field_Option = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[1]/div[2]/div/button");
+	By Comment_Field_Option = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[1]/div[2]/div/button");
 
-	By Comment_Field_Edit = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[1]/div[2]/div/ul/li[1]/a");
+	By Comment_Field_Edit = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[1]/div[2]/div/ul/li[1]/a/div");
 	
-	By Comment_Field_Delete = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[1]/div[2]/div/ul/li[2]/a");
+	By Comment_Field_Delete = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[1]/div[2]/div/ul/li[2]/a");
 	
-	By Comment_Insert = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[3]/div[1]/div/div");
+	By Comment_Insert = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[3]/div[1]/div/div");
 	
-	By Comment_Done = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[3]/div[2]/button[1]");
+	By Comment_Done = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[3]/div[2]/button[1]");
 	
-	By Comment_Cancel = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[3]/div[2]/button[2]");
+	By Comment_Cancel = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[3]/div[2]/button[2]");
 	
-	By Edited_history_tag = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[2]/a");
+	By Edited_history_tag = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div/section/div[2]/a");
 	
 	By Delete_Popup_Cancel_button = By.xpath("/html/body/div[4]/div/div/div[3]/button[1]");
 	
 	By Delete_Popup_Delete_Comment = By.xpath("/html/body/div[4]/div/div/div[3]/button[2]");
 	
-	By Previous_Comment = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div[1]/section/a");
+	By Previous_Comment = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[2]/div/div[1]/div[1]/section/a");
 	
 	public Comment_In_The_Post(WebDriver driver)
 	{
@@ -160,9 +160,9 @@ public class Comment_In_The_Post implements Comment_Interface{
 
 	public void Click_Comment_Feed_Option() {
 		
-		WebElement We = driver.findElement(Comment_Field_Option); 
-		
 		WebDriverWait wait = new WebDriverWait(driver,10);
+		
+		WebElement We = driver.findElement(Comment_Field_Option); 
 		 
 		wait.until(ExpectedConditions.elementToBeClickable(We));
 		
@@ -237,9 +237,9 @@ public class Comment_In_The_Post implements Comment_Interface{
 	
 	public void Click_Comment_Field_Edit() {
 		
-		WebElement We = driver.findElement(Comment_Field_Edit);
+		WebDriverWait wait = new WebDriverWait(driver,10);
 		
-		WebDriverWait wait = new WebDriverWait(driver,20);
+		WebElement We = driver.findElement(Comment_Field_Edit);
 		
 		wait.until(ExpectedConditions.elementToBeClickable(We));
 	
@@ -283,9 +283,9 @@ public class Comment_In_The_Post implements Comment_Interface{
 	
 	public void Insert_Comment_Edit() {
 		 
-		WebElement we = driver.findElement(Comment_Insert);
+		WebDriverWait wait = new WebDriverWait(driver,20);
 		
-		WebDriverWait wait = new WebDriverWait(driver,10);
+		WebElement we = driver.findElement(Comment_Insert);
 		
 		wait.until(ExpectedConditions.elementToBeClickable(we));
 		

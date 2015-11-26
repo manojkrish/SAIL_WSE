@@ -1,0 +1,72 @@
+package com.obj.Discussion;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Discussion implements Sail_Discussion_Interface{
+	
+	public WebDriver driver;
+	
+	By Connect = By.xpath("html/body/div[2]/div[1]/nav[2]/div/div[3]/ul[1]/li[3]/a");
+	
+	By Discussion = By.linkText("Discussions");//By.xpath("html/body/div[2]/div[1]/nav[2]/div/div[3]/ul[1]/li[3]/ul/li[3]/a");
+
+	By Discussion_Input_Box = By.xpath(".//*[@id='discussion-search']/div/div[1]/input");
+	
+	By Discussion_Result_Count = By.xpath("html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div[1]/div/span");
+	
+	By Discussion_Result_title = By.xpath("html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div");
+	
+	By No_More_Result_Found = By.xpath("html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/span");
+	
+	By Click_Result = By.xpath("html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div[2]");
+	
+	
+	public Discussion(WebDriver driver)
+	{
+		
+		this.driver = driver;
+		
+	}
+
+
+
+	public boolean Is_Connect_Displayed() {
+		
+		WebDriverWait wait = new WebDriverWait(driver,10);
+		
+		WebElement We = driver.findElement(Connect);
+		
+		wait.until(ExpectedConditions.elementToBeClickable(We));
+		
+		return We.isDisplayed();
+	
+	}
+
+
+	@Override
+	public void Click_Connect() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public boolean Is_Discussions_Displayed() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	@Override
+	public void Click_Discussions() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public 
+	
+}

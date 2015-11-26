@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="SAIL"/>
+<mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
+<listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+<listEntry value="com.obj.LoginPage.LoginPage"/>
+<listEntry value="com.obj.Bubble_Login.Bubble_Login_Inter"/>
+<listEntry value="com.obj.LoginPage.Sail_Interface_Login_page"/>
+<listEntry value="com.obj.Appium.Configuration.Appium"/>
+<listEntry value="com.obj.Practice_Activity.Practice_Activity_interface"/>
+<listEntry value="com.obj.Bubble_Login.Bubble_Login"/>
+<listEntry value="com.obj.Edit_Status.Edit_Status"/>
+<listEntry value="com.obj.Profile_Activity.Profile_Activity"/>
+<listEntry value="com.obj.Utils.Scroll_Bar"/>
+<listEntry value="com.obj.Browser.BrowserInit"/>
+<listEntry value="com.obj.MyFriends.MyFriends_Interface"/>
+<listEntry value="com.obj.StatusFeed.Sail_Interface_Status_feed"/>
+<listEntry value="com.obj.StatusFeed.StatusFeed"/>
+<listEntry value="com.obj.Utils.CustomVerification"/>
+<listEntry value="com.ExtentReport.ExtentReporterNG"/>
+<listEntry value="com.obj.Browser.OpenBrowser"/>
+<listEntry value="com.obj.Dashboard_Widget.Dashboard_Widget_Interface"/>
+<listEntry value="com.obj.FileUpload.FileUpload"/>
+<listEntry value="com.obj.Links.Links_Interface"/>
+<listEntry value="com.obj.MyFriends.MyFriends"/>
+<listEntry value="com.obj.Comment.Comment_In_The_Post"/>
+<listEntry value="com.obj.TestScript.Status_Feed_Test"/>
+<listEntry value="com.obj.Dashboard_Widget.Dashboard_Widget"/>
+<listEntry value="com.obj.FileUpload.FileUpload_Interface"/>
+<listEntry value="com.obj.Profile_Activity.Profile_Activity_Interface"/>
+<listEntry value="com.obj.Utils.Utils"/>
+<listEntry value="com.obj.Links.Links"/>
+<listEntry value="com.obj.Utilis.Utils"/>
+<listEntry value="com.obj.Delete_Option.Delete_In_Feed"/>
+<listEntry value="com.obj.Practice_Activity.Practice_Activity"/>
+<listEntry value="com.obj.Comment.Comment_Interface"/>
+<listEntry value="com.obj.Edit_Status.Sail_Interface_Edit_Option"/>
+<listEntry value="com.obj.Browser.Browser_Init_Grid"/>
+</listAttribute>
+<listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+<listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+<mapAttribute key="org.testng.eclipse.PARAMETERS"/>
+<stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+<intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

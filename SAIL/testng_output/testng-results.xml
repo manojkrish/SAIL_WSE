@@ -1,194 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" total="4" passed="0">
+<testng-results skipped="0" failed="1" total="11" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="87925" started-at="2015-09-04T05:48:17Z" finished-at="2015-09-04T05:49:44Z">
+  <suite name="Informal_Test_Case" duration-ms="489589" started-at="2015-11-23T12:11:14Z" finished-at="2015-11-23T12:19:24Z">
     <groups>
     </groups>
-    <test name="Dashboard_Teaser" duration-ms="87925" started-at="2015-09-04T05:48:17Z" finished-at="2015-09-04T05:49:44Z">
-      <class name="com.obj.TestScript.Status_Feed_Test">
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:com.obj.TestScript.Status_Feed_Test@2acf57e3]" name="OpenBrowser" is-config="true" duration-ms="30621" started-at="2015-09-04T11:18:17Z" finished-at="2015-09-04T11:18:47Z">
+    <test name="Dashboard_Status_Feed_Test_Case" duration-ms="91667" started-at="2015-11-23T12:11:14Z" finished-at="2015-11-23T12:12:46Z">
+      <class name="com.obj.TestScript.Dashboard_Status_Feed_TestScript">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:com.obj.TestScript.Dashboard_Status_Feed_TestScript@3d24753a]" name="OpenBrowser" is-config="true" duration-ms="38709" started-at="2015-11-23T17:41:14Z" finished-at="2015-11-23T17:41:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method status="FAIL" signature="Dashboard_Widget_TestCase()[pri:0, instance:com.obj.TestScript.Status_Feed_Test@2acf57e3]" name="Dashboard_Widget_TestCase" duration-ms="13081" started-at="2015-09-04T11:18:47Z" finished-at="2015-09-04T11:19:00Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=44.0.2403.157)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
-System info: host: 'CHENNWL-455FT12', ip: '10.98.5.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_05'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\MRANGA~1\AppData\Local\Temp\scoped_dir1888_2650}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.157, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a62cc425fd667620e2d50d6fb479938e
-*** Element info: {Using=xpath, value=/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=44.0.2403.157)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
-System info: host: 'CHENNWL-455FT12', ip: '10.98.5.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_05'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\MRANGA~1\AppData\Local\Temp\scoped_dir1888_2650}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.157, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a62cc425fd667620e2d50d6fb479938e
-*** Element info: {Using=xpath, value=/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at com.obj.Dashboard_Widget.Dashboard_Widget.Is_Status_Feed_Enabled(Unknown Source)
-	at com.obj.TestScript.Status_Feed_Test.Dashboard_Widget_TestCase(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="Dashboard_Widget_TestCase()[pri:0, instance:com.obj.TestScript.Dashboard_Status_Feed_TestScript@3d24753a]" name="Dashboard_Widget_TestCase" duration-ms="42038" started-at="2015-11-23T17:41:53Z" finished-at="2015-11-23T17:42:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Dashboard_Widget_TestCase -->
-        <test-method status="FAIL" signature="Status_Feed_TestCase()[pri:0, instance:com.obj.TestScript.Status_Feed_Test@2acf57e3]" name="Status_Feed_TestCase" duration-ms="10054" started-at="2015-09-04T11:19:00Z" finished-at="2015-09-04T11:19:10Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=44.0.2403.157)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
-System info: host: 'CHENNWL-455FT12', ip: '10.98.5.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_05'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\MRANGA~1\AppData\Local\Temp\scoped_dir1888_2650}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.157, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a62cc425fd667620e2d50d6fb479938e
-*** Element info: {Using=xpath, value=/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=44.0.2403.157)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
-System info: host: 'CHENNWL-455FT12', ip: '10.98.5.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_05'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\MRANGA~1\AppData\Local\Temp\scoped_dir1888_2650}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.157, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a62cc425fd667620e2d50d6fb479938e
-*** Element info: {Using=xpath, value=/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at com.obj.Dashboard_Widget.Dashboard_Widget.Is_Teaser_Feed_Enabled(Unknown Source)
-	at com.obj.TestScript.Status_Feed_Test.Status_Feed_TestCase(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.obj.TestScript.Dashboard_Status_Feed_TestScript@3d24753a]" name="CloseBrowser" is-config="true" duration-ms="10908" started-at="2015-11-23T17:42:35Z" finished-at="2015-11-23T17:42:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Status_Feed_TestCase -->
-        <test-method status="FAIL" signature="FileUpload_Test()[pri:0, instance:com.obj.TestScript.Status_Feed_Test@2acf57e3]" name="FileUpload_Test" duration-ms="13027" started-at="2015-09-04T11:19:10Z" finished-at="2015-09-04T11:19:23Z">
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.obj.TestScript.Dashboard_Status_Feed_TestScript -->
+    </test> <!-- Dashboard_Status_Feed_Test_Case -->
+    <test name="File_Upload_Test" duration-ms="149903" started-at="2015-11-23T12:12:46Z" finished-at="2015-11-23T12:15:16Z">
+      <class name="com.obj.FileUpload.File_Upload_Test_Case">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:com.obj.FileUpload.File_Upload_Test_Case@735f7ae5]" name="OpenBrowser" is-config="true" duration-ms="33227" started-at="2015-11-23T17:42:46Z" finished-at="2015-11-23T17:43:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="FAIL" signature="FileUpload_Test()[pri:0, instance:com.obj.FileUpload.File_Upload_Test_Case@735f7ae5]" name="FileUpload_Test" duration-ms="107126" started-at="2015-11-23T17:43:19Z" finished-at="2015-11-23T17:45:06Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element
-  (Session info: chrome=44.0.2403.157)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.03 seconds
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div/div[1]"}
+Command duration or timeout: 10.04 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'CHENNWL-455FT12', ip: '10.98.5.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_05'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\MRANGA~1\AppData\Local\Temp\scoped_dir1888_2650}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.157, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a62cc425fd667620e2d50d6fb479938e
-*** Element info: {Using=xpath, value=/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div}]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 099d889b-0a5f-4c25-906f-bf00ed3a3c48
+*** Element info: {Using=xpath, value=/html/body/div[4]/div/div/div[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=44.0.2403.157)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.03 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div/div[1]"}
+Command duration or timeout: 10.04 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'CHENNWL-455FT12', ip: '10.98.5.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_05'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\MRANGA~1\AppData\Local\Temp\scoped_dir1888_2650}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.157, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a62cc425fd667620e2d50d6fb479938e
-*** Element info: {Using=xpath, value=/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div}
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 099d889b-0a5f-4c25-906f-bf00ed3a3c48
+*** Element info: {Using=xpath, value=/html/body/div[4]/div/div/div[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at com.obj.Dashboard_Widget.Dashboard_Widget.Is_Teaser_Feed_Enabled(Unknown Source)
-	at com.obj.TestScript.Status_Feed_Test.FileUpload_Test(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at com.obj.Edit_Status.Edit_Status.Is_delete_Popup_Enabled(Unknown Source)
+	at com.obj.FileUpload.File_Upload_Test_Case.FileUpload_Test(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -212,86 +86,84 @@ Session ID: a62cc425fd667620e2d50d6fb479938e
 	at org.testng.TestNG.run(TestNG.java:1057)
 	at org.testng.TestNG.privateMain(TestNG.java:1364)
 	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div/div[1]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
+System info: host: 'CHENNWL-455FT12', ip: '10.98.5.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_05'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/MRANGA~1/AppData/Local/Temp/anonymous8094218404596717548webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/MRANGA~1/AppData/Local/Temp/anonymous8094218404596717548webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FileUpload_Test -->
-        <test-method status="FAIL" signature="LInksUpload_Test()[pri:0, instance:com.obj.TestScript.Status_Feed_Test@2acf57e3]" name="LInksUpload_Test" duration-ms="10042" started-at="2015-09-04T11:19:23Z" finished-at="2015-09-04T11:19:33Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=44.0.2403.157)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
-System info: host: 'CHENNWL-455FT12', ip: '10.98.5.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_05'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\MRANGA~1\AppData\Local\Temp\scoped_dir1888_2650}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.157, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a62cc425fd667620e2d50d6fb479938e
-*** Element info: {Using=xpath, value=/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=44.0.2403.157)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
-System info: host: 'CHENNWL-455FT12', ip: '10.98.5.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_05'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\MRANGA~1\AppData\Local\Temp\scoped_dir1888_2650}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.157, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a62cc425fd667620e2d50d6fb479938e
-*** Element info: {Using=xpath, value=/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at com.obj.Dashboard_Widget.Dashboard_Widget.Is_Teaser_Feed_Enabled(Unknown Source)
-	at com.obj.TestScript.Status_Feed_Test.LInksUpload_Test(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LInksUpload_Test -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.obj.TestScript.Status_Feed_Test@2acf57e3]" name="CloseBrowser" is-config="true" duration-ms="11090" started-at="2015-09-04T11:19:33Z" finished-at="2015-09-04T11:19:44Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.obj.FileUpload.File_Upload_Test_Case@735f7ae5]" name="CloseBrowser" is-config="true" duration-ms="9550" started-at="2015-11-23T17:45:06Z" finished-at="2015-11-23T17:45:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.obj.TestScript.Status_Feed_Test -->
-    </test> <!-- Dashboard_Teaser -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.obj.FileUpload.File_Upload_Test_Case -->
+    </test> <!-- File_Upload_Test -->
+    <test name="Discussion_Test" duration-ms="124920" started-at="2015-11-23T12:15:16Z" finished-at="2015-11-23T12:17:21Z">
+      <class name="com.obj.Discussion.Discussion_Test_Case">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:com.obj.Discussion.Discussion_Test_Case@2ef9b8bc]" name="OpenBrowser" is-config="true" duration-ms="36893" started-at="2015-11-23T17:45:16Z" finished-at="2015-11-23T17:45:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="Deleting_Discussion_Replies_Test()[pri:0, instance:com.obj.Discussion.Discussion_Test_Case@2ef9b8bc]" name="Deleting_Discussion_Replies_Test" duration-ms="20198" started-at="2015-11-23T17:45:53Z" finished-at="2015-11-23T17:46:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deleting_Discussion_Replies_Test -->
+        <test-method status="PASS" signature="Discussion_Replies_Option_Test()[pri:0, instance:com.obj.Discussion.Discussion_Test_Case@2ef9b8bc]" name="Discussion_Replies_Option_Test" duration-ms="14334" started-at="2015-11-23T17:46:13Z" finished-at="2015-11-23T17:46:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Discussion_Replies_Option_Test -->
+        <test-method status="PASS" signature="Discussion_Replies_test()[pri:0, instance:com.obj.Discussion.Discussion_Test_Case@2ef9b8bc]" name="Discussion_Replies_test" duration-ms="16781" started-at="2015-11-23T17:46:27Z" finished-at="2015-11-23T17:46:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Discussion_Replies_test -->
+        <test-method status="PASS" signature="Editing_Discussion_Replies_Test()[pri:0, instance:com.obj.Discussion.Discussion_Test_Case@2ef9b8bc]" name="Editing_Discussion_Replies_Test" duration-ms="20379" started-at="2015-11-23T17:46:44Z" finished-at="2015-11-23T17:47:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Editing_Discussion_Replies_Test -->
+        <test-method status="PASS" signature="Navigate_To_Discussion_Page_Test()[pri:0, instance:com.obj.Discussion.Discussion_Test_Case@2ef9b8bc]" name="Navigate_To_Discussion_Page_Test" duration-ms="2613" started-at="2015-11-23T17:47:04Z" finished-at="2015-11-23T17:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Navigate_To_Discussion_Page_Test -->
+        <test-method status="PASS" signature="filtering_Unfiltering_Discussion_Test()[pri:0, instance:com.obj.Discussion.Discussion_Test_Case@2ef9b8bc]" name="filtering_Unfiltering_Discussion_Test" duration-ms="2916" started-at="2015-11-23T17:47:07Z" finished-at="2015-11-23T17:47:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtering_Unfiltering_Discussion_Test -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.obj.Discussion.Discussion_Test_Case@2ef9b8bc]" name="CloseBrowser" is-config="true" duration-ms="10806" started-at="2015-11-23T17:47:10Z" finished-at="2015-11-23T17:47:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.obj.Discussion.Discussion_Test_Case -->
+    </test> <!-- Discussion_Test -->
+    <test name="About_Test" duration-ms="123052" started-at="2015-11-23T12:17:21Z" finished-at="2015-11-23T12:19:24Z">
+      <class name="com.obj.About.About_Test_Case">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:com.obj.About.About_Test_Case@614c5515]" name="OpenBrowser" is-config="true" duration-ms="48430" started-at="2015-11-23T17:47:21Z" finished-at="2015-11-23T17:48:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="About_Me_Test()[pri:0, instance:com.obj.About.About_Test_Case@614c5515]" name="About_Me_Test" duration-ms="28126" started-at="2015-11-23T17:48:09Z" finished-at="2015-11-23T17:48:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- About_Me_Test -->
+        <test-method status="PASS" signature="Navigate_To_About()[pri:0, instance:com.obj.About.About_Test_Case@614c5515]" name="Navigate_To_About" duration-ms="4855" started-at="2015-11-23T17:48:37Z" finished-at="2015-11-23T17:48:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Navigate_To_About -->
+        <test-method status="PASS" signature="Profile_Basic_Information_In_About()[pri:0, instance:com.obj.About.About_Test_Case@614c5515]" name="Profile_Basic_Information_In_About" duration-ms="30626" started-at="2015-11-23T17:48:42Z" finished-at="2015-11-23T17:49:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Profile_Basic_Information_In_About -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.obj.About.About_Test_Case@614c5515]" name="CloseBrowser" is-config="true" duration-ms="11014" started-at="2015-11-23T17:49:13Z" finished-at="2015-11-23T17:49:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.obj.About.About_Test_Case -->
+    </test> <!-- About_Test -->
+  </suite> <!-- Informal_Test_Case -->
 </testng-results>

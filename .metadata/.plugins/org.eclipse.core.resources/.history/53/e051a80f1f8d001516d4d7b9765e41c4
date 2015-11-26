@@ -1,0 +1,493 @@
+package com.obj.FileUpload;
+
+import java.util.concurrent.TimeUnit;
+
+import org.testng.annotations.Test;
+
+import com.obj.Browser.BrowserInit;
+import com.obj.Comment.Comment_In_The_Post;
+import com.obj.Dashboard_Widget.Dashboard_Widget;
+import com.obj.Edit_Status.Edit_Status;
+
+public class File_Upload_Test_Case extends BrowserInit {
+	
+	@Test//(priority = 3)
+	public void FileUpload_Test() throws InterruptedException {
+
+		FileUpload fu = new FileUpload(driver);
+
+		Edit_Status es = new Edit_Status(driver);
+
+		Comment_In_The_Post cp = new Comment_In_The_Post(driver);
+
+		Dashboard_Widget dw = new Dashboard_Widget(driver);
+
+		// fu.ScrollOption();
+
+		Thread.sleep(3000);
+
+		
+		  dw.Is_Teaser_Feed_Enabled();
+		  
+		  dw.Is_Teaser_Feed_Displayed();
+		  
+		  dw.Click_Feed_Page_Navigation();
+		 
+
+		// Multiple file upload //
+
+		fu.Is_File_Tab_Enabled();
+
+		fu.Is_File_Tab_Displayed();
+
+		fu.click_File_tab();
+
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		//fu.Click_File_Upload_Area_With_File();
+
+		// Verifying Empty alert visibility when posting without the file.
+
+		
+		 * fu.Click_File_Upload_Post_Button();
+		 * 
+		 * fu.Is_File_Tab_Empty_Alert_Enabled();
+		 * 
+		 * fu.Is_File_Tab_Empty_Alert_Displayed();
+		 * 
+		 * fu.Click_File_Tab_Empty_Alert_Popup();
+		 * 
+		 * Thread.sleep(3000);
+		 * 
+		 * // Editing the file post.
+		 * 
+		 * Assert.assertEquals(es.Is_Logged_In_User_Name_IsEnabled(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Logged_In_User_Name_IsDisplayed(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Logged_In_Feed_Name_IsEnabled(), true);
+		 * 
+		 * driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 * 
+		 * Assert.assertEquals(es.Is_Post_Feed_Enabled(), true);
+		 * 
+		 * driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 * 
+		 * Assert.assertEquals(es.Is_Post_Feed_Displayed(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Logged_In_Feed_Name_IsDisplayed(), true);
+		 * 
+		 * //driver.navigate().refresh();
+		 * 
+		 * if (es.Get_Logged_In_UserName().contentEquals(es.Get_Feed_Name())) {
+		 * 
+		 * es.Click_Post_Feed_Option();
+		 * 
+		 * Assert.assertEquals(es.Is_Edit_option_Enabled(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Edit_Option_Displayed(), true);
+		 * 
+		 * es.Click_Edit_Option();
+		 * 
+		 * try { es.Clear_Text_Field(); } catch(Exception e) {
+		 * System.out.println("No Such Element Fouund " +e); }
+		 * 
+		 * es.Insert_Text_In_Edit();
+		 * 
+		 * //es.Scrolling_The_Page();
+		 * 
+		 * Assert.assertEquals(es.Is_Done_Button_Enabled(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Done_Button_Displayed(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Cancel_Button_Enabled(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Cancel_Button_Displayed(), true);
+		 * 
+		 * es.Click_Done_Button();
+		 * 
+		 * 
+		 * 
+		 * try {
+		 * 
+		 * es.Is_Edited_History_tag_Enabled();
+		 * 
+		 * es.Is_Edited_History_tag_Displayed();
+		 * 
+		 * es.click_Edited_History_tag();
+		 * 
+		 * es.Is_Edited_history_popup_enabled();
+		 * 
+		 * es.Is_Edited_history_popup_displayed();
+		 * 
+		 * es.Get_Edited_History_Popup_Header();
+		 * 
+		 * try { es.Is_View_More_Enabled();
+		 * 
+		 * es.Is_view_more_Displayed();
+		 * 
+		 * es.click_View_More(); } catch (NoSuchElementException e) {
+		 * System.out.println("No Edited History Content Available"); }
+		 * es.Get_Edited_History_Content();
+		 * 
+		 * System.out.println("The content is : " +
+		 * es.Get_Edited_History_Content());
+		 * 
+		 * es.Close_Edited_History_Popup();
+		 * 
+		 * } catch (NoSuchElementException e) {
+		 * System.out.println("No Edit history tag is displayed"); } } //Posting
+		 * the comment
+		 * 
+		 * es.Scrolling_The_Page();
+		 * 
+		 * Assert.assertEquals(cp.Is_Comment_Enabled(), true);
+		 * 
+		 * Assert.assertEquals(cp.Is_Comment_Displayed(), true);
+		 * 
+		 * cp.Click_Comment_Field();
+		 * 
+		 * driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 * 
+		 * Assert.assertEquals(cp.Is_Comment_Button_Enabled(), true);
+		 * 
+		 * Assert.assertEquals(cp.Is_Comment_button_Displayed(), true);
+		 * 
+		 * cp.Multiple_Comment();
+		 * 
+		 * driver.navigate().refresh();
+		 * 
+		 * cp.Is_Previous_Comment_Enabled();
+		 * 
+		 * cp.Is_Previous_Comment_Displayed();
+		 * 
+		 * cp.Click_Previous_Comment();
+		 * 
+		 * //cp.Click_Comment_button();
+		 * 
+		 * Thread.sleep(3000);
+		 * 
+		 * cp.Is_Comment_Feed_Option_Enabled();
+		 * 
+		 * cp.Is_Comment_Feed_Option_Displayed();
+		 * 
+		 * cp.Click_Comment_Feed_Option();
+		 * 
+		 * cp.Click_Comment_Field_Edit();
+		 * 
+		 * Thread.sleep(3000);
+		 * 
+		 * cp.Insert_Comment_Edit();
+		 * 
+		 * cp.Is_Comment_Done_Enabled();
+		 * 
+		 * cp.Is_Comment_Done_Displayed();
+		 * 
+		 * cp.Is_Comment_Cancel_Enabled();
+		 * 
+		 * cp.Is_Comment_Cancel_displayed();
+		 * 
+		 * cp.click_Comment_Done();
+		 * 
+		 * try { cp.Is_Edited_history_tag_Enabled();
+		 * 
+		 * cp.Is_Edited_history_tag_Displayed();
+		 * 
+		 * cp.Click_Edited_hitsory_tag();
+		 * 
+		 * try { es.Is_View_More_Enabled();
+		 * 
+		 * es.Is_view_more_Displayed();
+		 * 
+		 * es.click_View_More(); } catch (NoSuchElementException e) {
+		 * System.out.println("No Edited History Content Available"); }
+		 * es.Get_Edited_History_Content();
+		 * 
+		 * System.out.println("The content is : " +
+		 * es.Get_Edited_History_Content());
+		 * 
+		 * es.Close_Edited_History_Popup();
+		 * 
+		 * } catch (NoSuchElementException e) {
+		 * System.out.println("No Edit history tag is displayed"); }
+		 * 
+		 * cp.Is_Comment_Feed_Option_Enabled();
+		 * 
+		 * cp.Is_Comment_Feed_Option_Displayed();
+		 * 
+		 * Thread.sleep(3000);
+		 * 
+		 * cp.Click_Comment_Feed_Option();
+		 * 
+		 * cp.Is_Comment_Field_Delete_Enabled();
+		 * 
+		 * cp.Is_Comment_Field_Delete_Displayed();
+		 * 
+		 * cp.Click_Comment_Field_Delete();
+		 * 
+		 * cp.Is_Delete_popup_Delete_Button_Enabled();
+		 * 
+		 * cp.Is_Delete_popup_Delete_Button_Displayed();
+		 * 
+		 * cp.click_Delete_popup_Delete_Button();
+		 * 
+		 * // Deleting the post.
+		 * 
+		 * Thread.sleep(2000);
+		 * 
+		 * es.Is_Post_Feed_Enabled();
+		 * 
+		 * es.Is_Post_Feed_Displayed();
+		 * 
+		 * Thread.sleep(3000);
+		 * 
+		 * es.Click_Post_Feed_Option();
+		 * 
+		 * es.Is_Delete_Enabled();
+		 * 
+		 * es.Is_Delete_Displayed();
+		 * 
+		 * es.Click_Delete();
+		 * 
+		 * Thread.sleep(3000);
+		 * 
+		 * es.Is_delete_Popup_Enabled();
+		 * 
+		 * es.Is_delete_Popup_Displayed();
+		 * 
+		 * es.Get_popup();
+		 * 
+		 * es.Click_Delete_button();
+		 * 
+		 * Thread.sleep(3000);
+		 
+
+		// Upload the Image upload features
+
+		
+		 * fu.Is_File_Tab_Enabled();
+		 * 
+		 * fu.Is_File_Tab_Displayed();
+		 * 
+		 * fu.click_File_tab();
+		 * 
+		 * fu.Click_File_Upload_Area_With_Image();
+		 * 
+		 * Assert.assertEquals(es.Is_Logged_In_User_Name_IsEnabled(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Logged_In_User_Name_IsDisplayed(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Logged_In_Feed_Name_IsEnabled(), true);
+		 * 
+		 * driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 * 
+		 * Assert.assertEquals(es.Is_Post_Feed_Enabled(), true);
+		 * 
+		 * driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 * 
+		 * Assert.assertEquals(es.Is_Post_Feed_Displayed(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Logged_In_Feed_Name_IsDisplayed(), true);
+		 * 
+		 * driver.navigate().refresh();
+		 * 
+		 * if (es.Get_Logged_In_UserName().contentEquals(es.Get_Feed_Name())) {
+		 * 
+		 * es.Click_Post_Feed_Option();
+		 * 
+		 * Assert.assertEquals(es.Is_Edit_option_Enabled(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Edit_Option_Displayed(), true);
+		 * 
+		 * es.Click_Edit_Option();
+		 * 
+		 * try { es.Clear_Text_Field(); } catch(Exception e) {
+		 * System.out.println("No Such Element Fouund " +e); }
+		 * 
+		 * es.Insert_Text_In_Edit();
+		 * 
+		 * es.Scrolling_The_Page();
+		 * 
+		 * Assert.assertEquals(es.Is_Done_Button_Enabled(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Done_Button_Displayed(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Cancel_Button_Enabled(), true);
+		 * 
+		 * Assert.assertEquals(es.Is_Cancel_Button_Displayed(), true);
+		 * 
+		 * es.Click_Done_Button();
+		 * 
+		 * es.Scrolling_The_Page();
+		 * 
+		 * Thread.sleep(3000);
+		 * 
+		 * try {
+		 * 
+		 * es.Is_Edited_History_tag_Enabled();
+		 * 
+		 * es.Is_Edited_History_tag_Displayed();
+		 * 
+		 * es.click_Edited_History_tag();
+		 * 
+		 * es.Is_Edited_history_popup_enabled();
+		 * 
+		 * es.Is_Edited_history_popup_displayed();
+		 * 
+		 * es.Get_Edited_History_Popup_Header();
+		 * 
+		 * try { es.Is_View_More_Enabled();
+		 * 
+		 * es.Is_view_more_Displayed();
+		 * 
+		 * es.click_View_More(); } catch (NoSuchElementException e) {
+		 * System.out.println("No Edited History Content Available"); }
+		 * es.Get_Edited_History_Content();
+		 * 
+		 * System.out.println("The content is : " +
+		 * es.Get_Edited_History_Content());
+		 * 
+		 * es.Close_Edited_History_Popup();
+		 * 
+		 * } catch (NoSuchElementException e) {
+		 * System.out.println("No Edit history tag is displayed"); }
+		 * 
+		 * driver.navigate().refresh();
+		 * 
+		 * //Posting the comment
+		 * 
+		 * //Comment_In_The_Post cp = new Comment_In_The_Post(driver);
+		 * 
+		 * es.Scrolling_The_Page();
+		 * 
+		 * driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		 * 
+		 * Assert.assertEquals(cp.Is_Comment_Enabled(), true);
+		 * 
+		 * driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		 * 
+		 * Assert.assertEquals(cp.Is_Comment_Displayed(), true);
+		 * 
+		 * cp.Click_Comment_Field();
+		 * 
+		 * driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 * 
+		 * Assert.assertEquals(cp.Is_Comment_Button_Enabled(), true);
+		 * 
+		 * Assert.assertEquals(cp.Is_Comment_button_Displayed(), true);
+		 * 
+		 * cp.Multiple_Comment();
+		 * 
+		 * Thread.sleep(3000);
+		 * 
+		 * driver.navigate().refresh();
+		 * 
+		 * cp.Is_Previous_Comment_Enabled();
+		 * 
+		 * cp.Is_Previous_Comment_Displayed();
+		 * 
+		 * cp.Click_Previous_Comment();
+		 * 
+		 * //cp.Click_Comment_button();
+		 * 
+		 * Thread.sleep(3000);
+		 * 
+		 * cp.Is_Comment_Feed_Option_Enabled();
+		 * 
+		 * cp.Is_Comment_Feed_Option_Displayed();
+		 * 
+		 * cp.Click_Comment_Feed_Option();
+		 * 
+		 * cp.Click_Comment_Field_Edit();
+		 * 
+		 * cp.Insert_Comment_Edit();
+		 * 
+		 * cp.Is_Comment_Done_Enabled();
+		 * 
+		 * cp.Is_Comment_Done_Displayed();
+		 * 
+		 * cp.Is_Comment_Cancel_Enabled();
+		 * 
+		 * cp.Is_Comment_Cancel_displayed();
+		 * 
+		 * cp.click_Comment_Done();
+		 * 
+		 * try { cp.Is_Edited_history_tag_Enabled();
+		 * 
+		 * cp.Is_Edited_history_tag_Displayed();
+		 * 
+		 * cp.Click_Edited_hitsory_tag();
+		 * 
+		 * try { es.Is_View_More_Enabled();
+		 * 
+		 * es.Is_view_more_Displayed();
+		 * 
+		 * es.click_View_More(); } catch (NoSuchElementException e) {
+		 * System.out.println("No Edited History Content Available"); }
+		 * es.Get_Edited_History_Content();
+		 * 
+		 * System.out.println("The content is : " +
+		 * es.Get_Edited_History_Content());
+		 * 
+		 * es.Close_Edited_History_Popup();
+		 * 
+		 * } catch (NoSuchElementException e) {
+		 * System.out.println("No Edit history tag is displayed"); }
+		 * 
+		 * cp.Is_Comment_Feed_Option_Enabled();
+		 * 
+		 * cp.Is_Comment_Feed_Option_Displayed();
+		 * 
+		 * driver.navigate().refresh();
+		 * 
+		 * Thread.sleep(3000);
+		 * 
+		 * cp.Click_Comment_Feed_Option();
+		 * 
+		 * cp.Is_Comment_Field_Delete_Enabled();
+		 * 
+		 * cp.Is_Comment_Field_Delete_Displayed();
+		 * 
+		 * cp.Click_Comment_Field_Delete();
+		 * 
+		 * cp.Is_Delete_popup_Delete_Button_Enabled();
+		 * 
+		 * cp.Is_Delete_popup_Delete_Button_Displayed();
+		 * 
+		 * cp.click_Delete_popup_Delete_Button();
+		 * 
+		 * // Deleting the post.
+		 * 
+		 * Thread.sleep(2000);
+		 * 
+		 * es.Scrolling_The_Page();
+		 * 
+		 * es.Is_Post_Feed_Enabled();
+		 * 
+		 * es.Is_Post_Feed_Displayed();
+		 * 
+		 * es.Click_Post_Feed_Option();
+		 * 
+		 * Thread.sleep(4000);
+		 * 
+		 * es.Is_Delete_Enabled();
+		 * 
+		 * es.Is_Delete_Displayed();
+		 * 
+		 * es.Click_Delete();
+		 * 
+		 * es.Is_delete_Popup_Enabled();
+		 * 
+		 * es.Is_delete_Popup_Displayed();
+		 * 
+		 * es.Get_popup();
+		 * 
+		 * es.Click_Delete_button();
+		 * 
+		 * Thread.sleep(3000); }
+		 
+
+	}
+
+
+}

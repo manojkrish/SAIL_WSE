@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.obj.TestScript.Status_Feed_Test">
+      <class name="com.obj.About.About_Test_Case">
         <methods>
-          <include name="LInksUpload_Test"/>
-          <include name="FileUpload_Test"/>
-          <include name="Dashboard_Widget_TestCase"/>
-          <include name="Status_Feed_TestCase"/>
-          <include name="setUp"/>
+          <include name="OpenBrowser"/>
+          <include name="profile_Basic_Information_for_gender_Test"/>
+          <include name="CloseBrowser"/>
         </methods>
-      </class> <!-- com.obj.TestScript.Status_Feed_Test -->
+      </class> <!-- com.obj.About.About_Test_Case -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

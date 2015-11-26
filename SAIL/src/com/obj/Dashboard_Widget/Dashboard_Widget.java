@@ -17,23 +17,23 @@ public class Dashboard_Widget implements Dashboard_Widget_Interface {
 	
 	public WebDriver driver;
 
-	By Status_Feed_Avail = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]");
+	By Status_Feed_Avail =By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]");	
+			//By
+			//.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]");
 
-	By Profile_Image = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/figure/a/img");
+	By Profile_Image = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/figure/a/img");//By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/figure/a/img");
 
-	By Status_Feed_Input_Field = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/div/div[1]/div/div/div/div/div");
+	By Status_Feed_Input_Field = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/div/div[1]/div/div/div/div/div");
 
 	By Status_Feed_PlaceHolder = By
 			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/share-widget/section/div[1]/section/div/div/div[1]/div/div/div/div/div[2]");
 
 	By clickPost = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[2]/button");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[2]/button");
 	
 	By Popup_Header_Text = By.xpath("/html/body/div[4]/div/div/div[1]");
 
-	By Popup_Footer_Text = By.xpath("html/body/div[4]/div/div/div[2]");
+	By Popup_Footer_Text = By.xpath("/html/body/div[4]/div/div/div[2]");
 
 	By Close_Status_Empty_Pop = By
 			.xpath("/html/body/div[4]/div/div/div[1]/button");
@@ -42,38 +42,40 @@ public class Dashboard_Widget implements Dashboard_Widget_Interface {
 			.xpath("/html/body/div[2]/div[1]/nav[2]/div/div[3]/ul[3]/li[1]/p");
 
 	By Is_Feed_UserName = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div/section/div/a");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div/section/div/a");
 
 	By Is_Time_Stamp = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div/section/div/span[2]/timeago");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div/section/div/span[2]/timeago");
 
 	By Is_Profile_Image_In_Feed_Post = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div/figure/a/img");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div/figure/a/img");
 	
-	By Is_Status_option = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[2]/div/button");
+	By Is_Status_option = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[2]/div/button");
 	
-	By Is_EveryOne_option = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[2]/div/ul/li[1]/a");
+	By Is_EveryOne_option = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[2]/div/ul/li[1]/a");
 	
-	By Is_MyFriends_option = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[2]/div/ul/li[2]/a");
+	By Is_MyFriends_option = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[2]/div/ul/li[2]/a");
 	
-	By Teaser_Feed = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div");
+	By Teaser_Feed = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[2]/div/div/feed-activity[1]/div");
 
-	By Feed_Page_Navigation = By.className("post-min-blocks");
+	By Feed_Page_Navigation = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[2]/div/button");
 	// FileUpload Tab
 	
-	By FileTab = By.xpath(".//*[@id='tabclick_1']/a/tab-heading"); 
+	By FileTab = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/ul/li[2]/a"); 
 	
-	By FileTab_StatusField = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/div/div[2]/div/div/upload-file/div/div/div[1]/div/div[1]"); 
+	By FileTab_StatusField = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/div/div[2]/div/div/upload-file/div/div/div[1]/div/div"); 
 	
-	By FileTab_Upload_Area = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/div/div[2]/div/div/upload-file/div/div/div[2]/div[1]/input");
+	By FileTab_Upload_Area = By.xpath(".//*[@id='status-widget-body']/section/div/div/div[2]/div/div/upload-file/div/div/div[2]/div[1]/input");//By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/div/div[2]/div/div/upload-file/div/div/div[2]/div[1]/input");
 	
 	By Status_Feed_ID = By.xpath("status-widget-body");
 	
-	By File_Tab_Post_Button = By.cssSelector("html.ng-scope body.push-menu.ng-scope div.app-container div.content div.ng-scope div.ng-scope div#dashboard.container.ng-scope div.sail div.ng-scope div.sail-block.ng-scope div.col-md-6.clr-right-pad div.row share-widget.ng-isolate-scope section#status-widget.col-xs-12.col-sm-12.col-md-12.fadeInUp div#status-widget-footer.row button.post-btn.pull-right");
+	By File_Tab_Post_Button = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[2]/button");
+			
+			//By.cssSelector("html.ng-scope body.push-menu.ng-scope div.app-container div.content div.ng-scope div.ng-scope div#dashboard.container.ng-scope div.sail div.ng-scope div.sail-block.ng-scope div.col-md-6.clr-right-pad div.row share-widget.ng-isolate-scope section#status-widget.col-xs-12.col-sm-12.col-md-12.fadeInUp div#status-widget-footer.row button.post-btn.pull-right");
 	
 	By File_Tab_Empty_Alert_Popup = By.xpath("/html/body/div[4]/div/div");
 	
-	By File_Tab_Empty_Alert_Close_Button = By.cssSelector("body > div.modal.fade.ng-isolate-scope.sail-modal.in > div > div > div.sail-m.modal-header.ng-scope > button");
+	By File_Tab_Empty_Alert_Close_Button = By.cssSelector("html.ng-scope body.push-menu.ng-scope.modal-open div.modal.fade.ng-isolate-scope.sail-modal.in div.modal-dialog div.modal-content div.sail-m.modal-header.ng-scope button.close");
 	
 	By ThumbNail_Close = By.cssSelector("html.ng-scope body.push-menu.ng-scope div.app-container div.content div.ng-scope div.ng-scope div#dashboard.container.ng-scope div.row.sail div.ng-scope div.col-md-6.col-sm-8.col-xs-12.ng-scope.ng-isolate-scope share-widget.ng-isolate-scope section#status-widget.col-xs-12.col-sm-12.col-md-12.fadeInUp div#status-widget-body section.status-box div.ng-isolate-scope div.tab-content div.tab-pane.ng-scope.active div.status-body.ng-scope div.ng-scope upload-file.ng-pristine.ng-untouched.ng-valid.ng-isolate-scope div div div.input-element.status-image-block div.previewThumb.thumbnail.ng-scope span.closeThumb");
 	
@@ -94,15 +96,15 @@ public class Dashboard_Widget implements Dashboard_Widget_Interface {
 	
 	//Links Tab
 	
-	By Link_Tab = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/ul/li[4]");
+	By Link_Tab = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/ul/li[4]/a");
 	
-	By Link_Text_Field = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/div/div[4]/div/div/link-post/div[1]/div/div");
+	By Link_Text_Field = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/div/div[4]/div/div/link-post/div[1]/div/div");
 	
-	By Meta_Description = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/div/div[4]/div/div/link-post/div[2]/div");
+	By Meta_Description = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/div/div[4]/div/div/link-post/div[2]/div");
 	
-	By Meta_Description_Close = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/div/div[4]/div/div/link-post/div[2]/div/button");
+	By Meta_Description_Close = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[1]/section/div/div/div[4]/div/div/link-post/div[2]/div/button");
 	
-	By clickPost1 = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[2]/button");
+	By clickPost1 = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/div/div/div[1]/div/share-widget/section/div[2]/button");
 	
 	public Dashboard_Widget(WebDriver driver) {
 
@@ -111,11 +113,10 @@ public class Dashboard_Widget implements Dashboard_Widget_Interface {
 	}
 
 	public boolean Is_Status_Feed_Enabled() 
-	{
-		
+	{		
+		WebDriverWait wait = new WebDriverWait(driver,30);
+	
 		WebElement We =driver.findElement(Status_Feed_Avail); 
-		
-		WebDriverWait wait = new WebDriverWait(driver,10);
 		
 		wait.until(ExpectedConditions.elementToBeClickable(We));
 		
@@ -565,7 +566,7 @@ public class Dashboard_Widget implements Dashboard_Widget_Interface {
 
 	public boolean Is_Teaser_Feed_Enabled() {
 		
-		WebDriverWait wait = new WebDriverWait(driver,10);
+		WebDriverWait wait = new WebDriverWait(driver,20);
 		
 		WebElement We3 = driver.findElement(Teaser_Feed);
 		
@@ -1010,6 +1011,8 @@ public class Dashboard_Widget implements Dashboard_Widget_Interface {
 	{
 		WebElement We = driver.findElement(FileTab_Upload_Area);
 		
+		We.click();
+		
 		We.sendKeys("D:\\Files\\Test.txt");
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -1091,14 +1094,14 @@ public class Dashboard_Widget implements Dashboard_Widget_Interface {
 	
 	public void Multiple_File_Upload_Area_With_File() throws InterruptedException 
 	{
-		String st[]={"D:\\Files\\Test_1.txt","D:\\Files\\Test_2.xls","D:\\Files\\Test_3.pptx","D:\\Files\\Test_1.txt"};
+		String st[]={"D:\\Files\\Test_1.txt","D:\\Files\\Test_2.xls","D:\\Files\\Test_1.txt"};
 		{
 			for(int i=0; i<st.length;i++)
 			{
 				
 				WebElement We = driver.findElement(FileTab_Upload_Area);
 				
-				Thread.sleep(2000);
+				//Thread.sleep(4000);
 				
 				We.sendKeys(st[i]);
 				
@@ -1238,9 +1241,9 @@ public class Dashboard_Widget implements Dashboard_Widget_Interface {
 
 	public boolean Is_Link_Text_Field_Enabled() {
 		
-		WebElement We = driver.findElement(Link_Text_Field);
-		
 		WebDriverWait wait = new WebDriverWait(driver,10);
+		
+		WebElement We = driver.findElement(Link_Text_Field);
 		
 		wait.until(ExpectedConditions.elementToBeClickable(We));
 

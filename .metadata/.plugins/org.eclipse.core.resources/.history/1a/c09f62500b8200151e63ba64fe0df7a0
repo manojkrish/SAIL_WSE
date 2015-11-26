@@ -1,0 +1,5 @@
+package com.obj.Discussion;
+
+public interface Sail_Discussion_Interface {
+
+}

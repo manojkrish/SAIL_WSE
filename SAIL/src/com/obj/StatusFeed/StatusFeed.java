@@ -24,18 +24,18 @@ public class StatusFeed implements Sail_Interface_Status_feed {
 	public WebDriver driver;
 
 	By Status_Feed_Avail = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[1]");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[1]");
 
 	By Profile_Image = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[1]/figure/a/img");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[1]/figure/a/img");
 
-	By Status_Feed_Input_Field = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[1]/section/div/div/div[1]/div/div/div/div/div[1]");
+	By Status_Feed_Input_Field = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[1]/section/div/div/div[1]/div/div/div/div/div");
 
 	By Status_Feed_PlaceHolder = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[1]/section/div/div/div[1]/div/div/div/div/div[2]");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[1]/section/div/div/div[1]/div/div/div/div/div[2]");
 
 	By clickPost = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[2]/button");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[2]/button");
 	
 	By Popup_Header_Text = By.xpath("/html/body/div[4]/div/div/div[1]");
 
@@ -48,19 +48,19 @@ public class StatusFeed implements Sail_Interface_Status_feed {
 			.xpath("/html/body/div[2]/div[1]/nav[2]/div/div[3]/ul[3]/li[1]/p");
 
 	By Is_Feed_UserName = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/div[1]/h3/a");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/div[1]/h3/a");
 
 	By Is_Time_Stamp = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/span/timeago");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/span/timeago");
 
 	By Is_Profile_Image = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/figure/a/img");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/figure/a/img");
 	
-	By Is_Status_option = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[2]/div/button");
+	By Is_Status_option = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[2]/div/button");
 	
-	By Is_EveryOne_option = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[2]/div/ul/li[1]/a");
+	By Is_EveryOne_option = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[2]/div/ul/li[1]/a");
 	
-	By Is_MyFriends_option = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[2]/div/ul/li[2]/a");
+	By Is_MyFriends_option = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[2]/div/ul/li[2]/a");
 	
 
 	public StatusFeed(WebDriver driver) {
@@ -410,7 +410,7 @@ public class StatusFeed implements Sail_Interface_Status_feed {
 	wait1.until(ExpectedConditions.elementToBeClickable(WE));	
 	
 	String st = WE.getText();
-		
+	
 	return st;
 	}
 	

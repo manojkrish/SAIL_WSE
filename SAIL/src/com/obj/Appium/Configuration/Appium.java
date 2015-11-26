@@ -28,7 +28,7 @@ public class Appium {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("deviceName", "Lenovo");
 		capabilities.setCapability(CapabilityType.BROWSER_NAME, "Chrome"); //Name of mobile web browser to automate. Should be an empty string if automating an app instead.
-		capabilities.setCapability("platformVersion", "4.4.4");
+		capabilities.setCapability("platformVersion", "5.0.2");
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("app-package", "com.android.chrome"); //Replace with your app's package
 		capabilities.setCapability("app-activity", "APP PACKAGE.ANDROID ACTIVITY"); //Replace with app's Activity

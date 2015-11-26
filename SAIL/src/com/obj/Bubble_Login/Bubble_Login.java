@@ -87,12 +87,12 @@ public class Bubble_Login implements Bubble_Login_Inter {
 		
 		wait.until(ExpectedConditions.presenceOfElementLocated(User_Name_Field));
 		
-		We.sendKeys("kor02.00001.us");
+		We.sendKeys("kor02.00020.us");
 		
 	}
 	
 	public boolean Is_Password_Field_Enabled() {
-		
+			
 		WebDriverWait wait = new WebDriverWait(driver,10);
 		
 		WebElement We = driver.findElement(Password_Field);
@@ -121,7 +121,7 @@ public class Bubble_Login implements Bubble_Login_Inter {
 		
 		wait.until(ExpectedConditions.presenceOfElementLocated(Password_Field));
 		
-		We.sendKeys("Pa@100805");
+		We.sendKeys("Pa@100919");
 	}
 	
 	public boolean Is_Login_Button_Enabled() {

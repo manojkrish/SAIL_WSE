@@ -16,21 +16,21 @@ public class FileUpload implements FileUpload_Interface{
 	
 	public WebDriver driver;
 	
-	By FileTab = By.xpath(".//*[@id='tabclick_1']/a/tab-heading"); 
+	By FileTab = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[1]/section/div/ul/li[2]/a"); 
 	
-	By FileTab_StatusField = By.cssSelector("#status-widget-body > section > div > div > div.tab-pane.ng-scope.active > div > div > upload-file > div > div > div.ng-pristine.ng-untouched.ng-valid > div > div");
+	By FileTab_StatusField = By.cssSelector("html.ng-scope body.push-menu.ng-scope div.app-container div.content div.ng-scope div.container.ng-scope div.row.sail div.col-md-6.col-sm-8.col-sm-offset-2.col-xs-12.col-md-offset-3.ng-isolate-scope share-widget.ng-isolate-scope section#status-widget.col-xs-12.col-sm-12.col-md-12.fadeInUp div#status-widget-body section.status-box div.ng-isolate-scope div.tab-content div.tab-pane.ng-scope.active div.status-body.ng-scope div.ng-scope upload-file.ng-pristine.ng-untouched.ng-valid.ng-isolate-scope div div div.ng-pristine.ng-untouched.ng-valid div.status-block div.input-element.update-txt");
 	
-	By FileTab_Upload_Area = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[1]/section/div/div/div[2]/div/div/upload-file/div/div/div[2]/div[1]/input");
+	By FileTab_Upload_Area = By.xpath(".//*[@id='status-widget-body']/section/div/div/div[2]/div/div/upload-file/div/div/div[2]/div[1]/input");
 	
 	By Status_Feed_ID = By.xpath("status-widget-body");
 	
-	By File_Tab_Post_Button = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[2]/button");
+	By File_Tab_Post_Button = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[2]/button");
 	
-	By File_Tab_Empty_Alert_Popup = By.xpath("/html/body/div[4]/div/div");
+	By File_Tab_Empty_Alert_Popup = By.xpath("/html/body/div[4]/div/div/div[1]");
 	
 	By File_Tab_Empty_Alert_Close_Button = By.xpath("/html/body/div[4]/div/div/div[1]/button");
 	
-	By ThumbNail_Close = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[1]/section/div/div/div[2]/div/div/upload-file/div/div/div[2]/div[2]/span");
+	By ThumbNail_Close = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/share-widget/section/div[1]/section/div/div/div[2]/div/div/upload-file/div/div/div[2]/div[2]/span");
 	
 	By Click_ThumbNail = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/share-widget/section/div[1]/section/div/div/div[2]/div/div/upload-file/div/div/div[2]/div[2]/img");
 	
@@ -45,6 +45,8 @@ public class FileUpload implements FileUpload_Interface{
 	By Is_File_upload_Edit_Cancel_button = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[2]/button[1]");
 	
 	By Is_File_upload_Edit_Done_button = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[2]/button[2]");
+	
+	By Empty_Status_Alert_Popup = By.xpath("html/body/div[4]/div/div/div[1]/button");
 	
 	public FileUpload(WebDriver driver) {
 
@@ -174,7 +176,7 @@ public class FileUpload implements FileUpload_Interface{
 		Thread.sleep(3000);
 		*/
 		
-		String st [] = {"C:\\Users\\Public\\Pictures\\Sample Pictures\\Desert.jpg","C:\\Users\\Public\\Pictures\\Sample Pictures\\Hydrangeas.jpg","C:\\Users\\Public\\Pictures\\Sample Pictures\\Jellyfish.jpg"};
+		String st [] = {"http://www.independent.co.uk/incoming/article8465213.ece/alternates/w620/v2-cute-cat-picture.jpg","C:\\Users\\Public\\Pictures\\Sample Pictures\\Hydrangeas.jpg","C:\\Users\\Public\\Pictures\\Sample Pictures\\Jellyfish.jpg"};
 		{
 			for(int i=0; i<st.length;i++)
 			{
@@ -454,6 +456,8 @@ public class FileUpload implements FileUpload_Interface{
 	{
 		WebElement We = driver.findElement(FileTab_Upload_Area);
 		
+		We.click();
+		
 		We.sendKeys("D:\\Files\\Test.txt");
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -535,14 +539,16 @@ public class FileUpload implements FileUpload_Interface{
 	
 	public void Multiple_File_Upload_Area_With_File() throws InterruptedException 
 	{
-		String st[]={"D:\\Files\\Test_1.txt","D:\\Files\\Test_2.xls","D:\\Files\\Test_3.pptx","D:\\Files\\Test_1.txt"};
+		String st[]={"D:\\Files\\Test_1.txt","D:\\Files\\Test_2.xls","D:\\Files\\Test_1.txt"};
 		{
 			for(int i=0; i<st.length;i++)
 			{
 				
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
 				WebElement We = driver.findElement(FileTab_Upload_Area);
 				
-				Thread.sleep(2000);
+				Thread.sleep(3000);
 				
 				We.sendKeys(st[i]);
 				

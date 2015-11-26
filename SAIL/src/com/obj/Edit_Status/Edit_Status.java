@@ -28,33 +28,33 @@ public class Edit_Status implements Sail_Interface_Edit_Option {
 
 	By Logged_In_User_Name = By.xpath("/html/body/div[2]/div[1]/nav[2]/div/div[3]/ul[3]/li[1]/p");
 	
-	By Logged_In_Feed_User_Name = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/div[1]/h3/a");
+	By Logged_In_Feed_User_Name = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/div[1]/h3/a");
 	
-	By Post_Feed_Avail = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]");
+	By Post_Feed_Avail = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]");
 	
-	By Post_feed_option = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/div[2]/div/button");
+	By Post_feed_option = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/div[2]/div/button");
 	
-	By Edit_Option = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/div[2]/div/ul/li[2]/a[2]");
+	By Edit_Option = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/div[2]/div/ul/li[2]/a[2]");
 			
-	By Edit_Text_Field = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[1]/div/div");
+	By Edit_Text_Field = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div[2]/div[1]/div/div");
 
-	By Done_Button = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[2]/button[1]");
+	By Done_Button = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div[2]/div[2]/button[1]");
 
-	By Cancel_Button = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[2]/button[2]");
+	By Cancel_Button = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div[2]/div[2]/button[2]");
 	
-	By Empty_Alert_Popup = By.xpath("/html/body/div[4]/div/div");
+	By Empty_Alert_Popup = By.xpath("/html/body/div[4]/div/div/div[1]");
 
 	By Empty_Alert_Close_button = By
 			.xpath("/html/body/div[4]/div/div/div[1]/button");
 
 	By Post_After_Empty_Alert = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[1]/div");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[1]/div");
 
 	By Edited_Post_After_Done = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[1]/div");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[1]/div");
 
 	By Edited_History_Tag = By
-			.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/div[2]/a");
+			.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/div[2]/a");
 
 	By Edited_History_Header_Popup = By
 			.xpath("/html/body/div[4]/div/div/div[1]");
@@ -69,21 +69,23 @@ public class Edit_Status implements Sail_Interface_Edit_Option {
 	By Edited_History_Content = By.xpath("/html/body/div[4]/div/div/div[2]");
 	
 	By Edited_Verison_Count = By
-			.xpath("html/body/div[4]/div/div/div[2]/div[1]/div[2]/a");
+			.xpath("/html/body/div[4]/div/div/div[2]/div[1]/div[2]/a");
 	
-	By Content_Before_Edit = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[1]/div");
+	By Content_Before_Edit = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[1]/div");
 
-	By Content_After_Edit = By.xpath("/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[1]/div");
+	By Content_After_Edit = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/div[1]/div/div/div/div[1]/div");
 	
-	By Post_feed_option_1 = By.cssSelector("#post-widget-body > div > section > header > div.btn-group.post-settings.dropdown > div > button");
+	By Post_feed_option_1 = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/div[2]/div/button/span");
 	
-	By Edit_Option_1 = By.cssSelector("#post-widget-body > div > section > header > div.btn-group.post-settings.dropdown > div > ul > li.ng-scope > a:nth-child(2) > div > div");
+	By Edit_Option_1 = By.linkText("Edit");//By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/div[2]/div/ul/li[2]/a[2]/div");
 	
-	By Delete = By.linkText("Delete"); 
+	By Delete = By.linkText("Delete");//By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/share-preview[1]/section/div[1]/div/section/header/div[3]/div/ul/li[2]/a[1]/delete-post");
 	
 	By Delete_popup = By.xpath("/html/body/div[4]/div/div/div[1]");
 	
 	By Delete_Button = By.xpath("/html/body/div[4]/div/div/div[3]/button[2]");
+	
+	By InValid = By.xpath("/html/body/div[4]/div/div/div[1]/button");
 	
 	
 	
@@ -91,6 +93,20 @@ public class Edit_Status implements Sail_Interface_Edit_Option {
 
 		this.driver = driver;
 
+	}
+	
+	public void Click_Invalid()
+	{
+		
+		WebDriverWait wait = new WebDriverWait(driver,10);
+		
+		WebElement We = driver.findElement(InValid);
+		
+		wait.until(ExpectedConditions.elementToBeClickable(We));
+		
+		We.click();
+		
+		
 	}
 
 	public void Scrolling_The_Page()
@@ -135,8 +151,8 @@ public class Edit_Status implements Sail_Interface_Edit_Option {
 		
 		String st1=We.getText();
 		
-		String st2 = st1.substring(9, 37);
-	
+		String st2 = st1.replace("Welcome, .", "  ");
+		
 		return  st2;
 		
 	}
@@ -203,8 +219,6 @@ public class Edit_Status implements Sail_Interface_Edit_Option {
 		WebDriverWait wait = new WebDriverWait(driver,20);
 		
 		WebElement we = driver.findElement(Post_feed_option_1);
-		
-		we.sendKeys(Keys.PAGE_UP);
 		
 		wait.until(ExpectedConditions.elementToBeClickable(we));
 		

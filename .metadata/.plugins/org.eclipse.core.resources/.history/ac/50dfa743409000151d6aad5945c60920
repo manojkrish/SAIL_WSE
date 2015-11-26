@@ -1,0 +1,74 @@
+package com.obj.About;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class About {
+	
+		public WebDriver driver;
+	
+		By MyWse = By.linkText("MyWSE"); 
+		
+		By My_Profile = By.linkText("My Profile");
+
+		By About = By.linkText("About");
+	 
+	    By Edit_Button= By.id("edit-personal-data");
+	    
+	    By Student_Email_Id = By.id("student-profile-edit-email");
+	    
+	    By Student_Mobile_telephone =  By.id("student-profile-edit-mobile-telephone");  
+	    
+	    By Student_home_telephone = By.id("student-profile-edit-home-telephone");  
+	      
+	    By Student_work_telephone = By.id("student-profile-edit-work-telephone");
+	   
+	    By Social_Network_1 = By.id("student-profile-edit-social-network1");
+	    
+	    By Social_Network_2 = By.id("student-profile-edit-social-network2");
+	    
+	    By Social_Network_3 = By.id("student-profile-edit-social-network3");
+	    
+	    By Social_Network_4 = By.id("student-profile-edit-social-network4");
+	    
+	    By Preferred_Contact = By.id("student-profile-edit-preferred-contact");
+	    
+	    By Gender = By.id("student-profile-edit-gender");
+	    
+	    By Nationality = By.id("student-profile-edit-nationality");
+	    
+	    By Native_Language = By.id("student-profile-edit-native-language");
+	    
+	    By Secondary_Language = By.id("student-profile-edit-secondary-language");
+	    
+	    By Personal_motivation = By.id("student-profile-edit-personal-motivation");
+	    
+	    By Profession = By.id("student-profile-edit-profession");
+	    
+	    By Buisness = By.xpath("//input[@value='Business']");  
+	    
+	    By Career =  By.xpath("//input[@value='Career']");  
+	    
+	    By Fun = By.xpath("//input[@value='Fun']");
+	     
+	    By Studies = By.xpath("//input[@value='Studies']");  
+	     
+	    By Travel = By.xpath("//input[@value='Travel']");  
+	    
+	    By About_Me = By.xpath("//div[@id='general-info-wrapper']/div/form/section[2]/div/div/div/textarea"); 
+	    
+	    By Interests_and_hobbies = By.xpath("//div[@id='general-info-wrapper']/div/form/section[2]/div/div[2]/div/textarea");  
+	       
+	    By Why_I_Study_English = By.xpath("//div[@id='general-info-wrapper']/div/form/section[2]/div/div[4]/div/textarea");
+	    
+	    By Submit = By.id("student-profile-edit-submit");
+
+		
+	    
+	    public About(WebDriver driver)
+	    {
+	    	this.driver= driver;
+	    }
+	    
+	    }
+
